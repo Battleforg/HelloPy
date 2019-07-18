@@ -1,6 +1,7 @@
+import random
 print("Hello, World")
 if 5 > 2:
-  print("Five is greater than two")
+    print("Five is greater than two")
 
 x = 5
 y = "Hello World"
@@ -45,7 +46,6 @@ print(b)
 print(type(a))
 print(type(b))
 
-import random
 print(random.randrange(1, 10))
 
 # multiline string: """ .... """ or ''' ... '''
@@ -61,9 +61,9 @@ print(2 ** 3)
 # List ordered, changeable, allow duplicate
 aList = [1, 2, 3]
 print(aList)
-print(aList[1]) # 2
+print(aList[1])  # 2
 aList[2] = 5
-print(aList[2]) # 5
+print(aList[2])  # 5
 print(aList)
 # alist[3] = 5  index out of range
 
@@ -71,3 +71,19 @@ print(aList)
 aTuple = (1, 2, 3)
 print(aTuple)
 print(aTuple[2])
+
+# Set unordered, unindexed, cannot change but can add or remove()
+aSet = {"apple", "banana", "cherry"}
+print(aSet)
+for x in aSet:
+    print(x)
+
+# add one item
+aSet.add(1)
+print(aSet)
+
+# add mulitple items
+aSet.update([1.2, 3.4, 3j, 9.9])
+print(aSet)
+
+# dictionary unordered, changable, indexed
