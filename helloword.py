@@ -87,3 +87,21 @@ aSet.update([1.2, 3.4, 3j, 9.9])
 print(aSet)
 
 # dictionary unordered, changable, indexed
+aDict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(aDict)
+# access items
+print(aDict["model"])
+print(aDict.get("model"))
+
+# change values
+aDict["year"] = 2222
+# loop through a dicationary
+for x in aDict:
+    # print keys
+    print(x)
+    # print values
+    print(aDict[x])
